@@ -17,7 +17,7 @@ players = json.load(open("data/players.json"))
 selected = st.multiselect(
     "Select 11 Players",
     players,
-    format_func=lambda x: f"{x['name']} ({x['role']})"
+    format_func=lambda x: f"{x['name']} ({x['SkillName']})"
 )
 
 if len(selected) == 11:
