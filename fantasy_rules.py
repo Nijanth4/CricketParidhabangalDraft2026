@@ -14,10 +14,10 @@ def validate_team(team):
     if roles["WK"] < 1 or roles["AR"] < 1 or roles["BAT"] < 2 or roles["BOWL"] < 2:
         return "Role distribution invalid"
 
-    if bat_bowl_sum < 55:
+    if bat_bowl_sum < 5:
         return "Batters + Bowlers sum must be ≥ 55"
 
-    if overseas > 46:
+    if overseas > 4:
         return "Overseas limit exceeded"
 
     return "OK"
