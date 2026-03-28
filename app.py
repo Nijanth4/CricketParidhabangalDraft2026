@@ -12,7 +12,7 @@ if "user" not in st.session_state:
 
 st.title("🏏 Fantasy Cricket League")
 
-players = json.load(open("data/players.json"))
+players = json.load(open("players.json"))
 
 selected = st.multiselect(
     "Select 11 Players",
